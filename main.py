@@ -66,7 +66,7 @@ def get_weather(city: str = Query(...)):
         }
 
         history = [return_weather] + [h for h in history if h != return_weather]
-        history = history[:10]
+        history = history[:20]
 
         save_history(history)
 
