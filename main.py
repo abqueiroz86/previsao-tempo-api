@@ -1,11 +1,26 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
+import json
 import requests
 
 app = FastAPI()
 
-API_KEY = ""
+# Salva histórico de pesquisas no arquilo history.json
+FILE = "history.json"
+
+def load_history():
+    try:
+        with open(FILE, "r") as f:
+            return json.load(f)
+    except:
+        return []
+
+def save_history(history):
+    with open(FILE, "w") as f:
+        json.dump(history, f)
+
+API_KEY = "f175b510ce298a681a97199fce1319f0"
 
 origins = [
     "http://localhost:3000",  # seu frontend
@@ -22,6 +37,8 @@ app.add_middleware(
 @app.get("/weather")
 def get_weather(city: str = Query(...)):
     try:
+        history = load_history()
+
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric&lang=pt_br"
         
         response = requests.get(url)
@@ -33,17 +50,23 @@ def get_weather(city: str = Query(...)):
             )
 
         data = response.json()
-        
 
-        return {
+        return_weather = {
             "city": data.get("name"),
             "temp": data["main"]["temp"],
             "feels_like": data["main"]["feels_like"],
             "description": data["weather"][0]["description"],
             "humidity": data["main"]["humidity"],
             "wind_speed": data["wind"]["speed"],
-            'coord': data['coord']
+            "coord": data['coord']
         }
+
+        history = [return_weather] + [h for h in history if h != return_weather]
+        history = history[:10]
+
+        save_history(history)
+
+        return return_weather
 
     except requests.exceptions.RequestException:
         raise HTTPException(
