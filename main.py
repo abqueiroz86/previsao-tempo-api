@@ -1,8 +1,14 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
 
 import json
 import requests
+import os
+
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 
 app = FastAPI()
 
@@ -19,8 +25,6 @@ def load_history():
 def save_history(history):
     with open(FILE, "w") as f:
         json.dump(history, f)
-
-API_KEY = "f175b510ce298a681a97199fce1319f0"
 
 origins = [
     "http://localhost:3000",  # seu frontend
