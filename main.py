@@ -83,3 +83,16 @@ def get_weather(city: str = Query(...)):
             status_code=500,
             detail=str(e)
         )
+    
+@app.get("/history")
+def get_history():
+    try:
+        history = load_history()
+
+        return history
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )
