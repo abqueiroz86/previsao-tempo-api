@@ -54,6 +54,11 @@ npm install leaflet react-leaflet
 npm install react-hot-toast
 ``` 
 
+## API EXTERNA ( OpenWeather )
+Disponível em [https://openweathermap.org/](https://openweathermap.org/)
+
+Gerar uma key no site e salvar a mesma no arquivo .env da API
+
 ## Executando o Projeto
 
 ### 1. Backend (FastAPI)
