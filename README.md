@@ -5,10 +5,10 @@ Aplicação fullstack para consulta de clima em tempo real, com histórico de bu
 ## 🚀 Preview
 
 ### PC
-![Demo](./app/docs/pc.gif)
+![Demo](./docs/pc.gif)
 
 ### Celular
-![Demo](./app/docs/celular.gif)
+![Demo](./docs/celular.gif)
 
 ## 🛠️ Tecnologias
 
