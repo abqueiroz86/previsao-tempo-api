@@ -1,5 +1,41 @@
 [
   {
+    "city": "Barrinha",
+    "temp": 22.98,
+    "feels_like": 23.08,
+    "description": "algumas nuvens",
+    "humidity": 67,
+    "wind_speed": 1.18,
+    "coord": {
+      "lon": -48.1639,
+      "lat": -21.1936
+    }
+  },
+  {
+    "city": "Sertãozinho",
+    "temp": 23.06,
+    "feels_like": 23.17,
+    "description": "céu limpo",
+    "humidity": 67,
+    "wind_speed": 1.42,
+    "coord": {
+      "lon": -47.9903,
+      "lat": -21.1378
+    }
+  },
+  {
+    "city": "Araraquara",
+    "temp": 22.18,
+    "feels_like": 22.26,
+    "description": "nublado",
+    "humidity": 69,
+    "wind_speed": 1.49,
+    "coord": {
+      "lon": -48.1756,
+      "lat": -21.7944
+    }
+  },
+  {
     "city": "Serrana",
     "temp": 23.97,
     "feels_like": 24.2,
