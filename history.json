@@ -1,1 +1,26 @@
-[{"city": "Cajuru", "temp": 27.64, "feels_like": 28.06, "description": "nuvens dispersas", "humidity": 50, "wind_speed": 2.17, "coord": {"lon": -47.3042, "lat": -21.2753}}, {"city": "Pinhal", "temp": 23.51, "feels_like": 23.14, "description": "nuvens dispersas", "humidity": 47, "wind_speed": 3.6, "coord": {"lon": -53.8, "lat": -29.6}}, {"city": "Araras", "temp": 27.16, "feels_like": 27.98, "description": "c\u00e9u limpo", "humidity": 56, "wind_speed": 2.12, "coord": {"lon": -47.3842, "lat": -22.3569}}, {"city": "Ribeir\u00e3o Preto", "temp": 31, "feels_like": 30.26, "description": "algumas nuvens", "humidity": 35, "wind_speed": 3.6, "coord": {"lon": -47.8103, "lat": -21.1775}}, {"city": "Pontal", "temp": 31.15, "feels_like": 32.28, "description": "c\u00e9u limpo", "humidity": 47, "wind_speed": 1.18, "coord": {"lon": -48.0372, "lat": -21.0225}}, {"city": "Pontal", "temp": 31.15, "feels_like": 31.11, "description": "c\u00e9u limpo", "humidity": 40, "wind_speed": 2.07, "coord": {"lon": -48.0372, "lat": -21.0225}}, {"city": "Pontal", "temp": 31.15, "feels_like": 30.82, "description": "c\u00e9u limpo", "humidity": 38, "wind_speed": 2.07, "coord": {"lon": -48.0372, "lat": -21.0225}}, {"city": "Mar\u00edlia", "temp": 28.73, "feels_like": 30.04, "description": "nublado", "humidity": 56, "wind_speed": 2.13, "coord": {"lon": -49.9458, "lat": -22.2139}}, {"city": "Pontal", "temp": 32.12, "feels_like": 32.83, "description": "c\u00e9u limpo", "humidity": 42, "wind_speed": 2.07, "coord": {"lon": -48.0372, "lat": -21.0225}}, {"city": "Pontal", "temp": 32.12, "feels_like": 31.62, "description": "c\u00e9u limpo", "humidity": 35, "wind_speed": 3.43, "coord": {"lon": -48.0372, "lat": -21.0225}}, {"city": "Pontal", "temp": 32.12, "feels_like": 31.48, "description": "c\u00e9u limpo", "humidity": 34, "wind_speed": 3.43, "coord": {"lon": -48.0372, "lat": -21.0225}}]
+[
+  {
+    "city": "Ribeirão Preto",
+    "temp": 24.37,
+    "feels_like": 24.48,
+    "description": "nuvens dispersas",
+    "humidity": 62,
+    "wind_speed": 1.21,
+    "coord": {
+      "lon": -47.8103,
+      "lat": -21.1775
+    }
+  },
+  {
+    "city": "Pontal",
+    "temp": 24.19,
+    "feels_like": 24.31,
+    "description": "algumas nuvens",
+    "humidity": 63,
+    "wind_speed": 1.33,
+    "coord": {
+      "lon": -48.0372,
+      "lat": -21.0225
+    }
+  }
+]
